@@ -18,17 +18,17 @@ The dataset used in this example is a preprocessed excerpt of the
 
 print __doc__
 
-from time import time
 import logging
-import pylab as pl
-import numpy as np
+from time import time
 
+import numpy as np
+import pylab as pl
 from sklearn.cross_validation import train_test_split
 from sklearn.datasets import fetch_lfw_people
+from sklearn.decomposition import RandomizedPCA
 from sklearn.grid_search import GridSearchCV
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
-from sklearn.decomposition import RandomizedPCA
 from sklearn.svm import SVC
 
 # Display progress logs on stdout

@@ -2,7 +2,6 @@
 
 import os
 import pickle
-import re
 import sys
 
 sys.path.append( "../tools/" )

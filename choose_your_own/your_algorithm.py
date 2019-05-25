@@ -1,8 +1,9 @@
 #!/usr/bin/python
 
 import matplotlib.pyplot as plt
-from prep_terrain_data import makeTerrainData
+
 from class_vis import prettyPicture
+from prep_terrain_data import makeTerrainData
 
 features_train, labels_train, features_test, labels_test = makeTerrainData()
 
@@ -41,6 +42,13 @@ print "acc: ", clf.score(features_test, labels_test)
 from sklearn.neighbors import KNeighborsClassifier
 clf = KNeighborsClassifier(n_neighbors=1, algorithm='auto', weights='distance')
 clf.fit(features_train, labels_train)
+print "acc: ", clf.score(features_test, labels_test)
+
+from sklearn.naive_bayes import GaussianNB
+clf = GaussianNB()
+clf.fit(features_train, labels_train)
+clf.predict(features_test)
+
 print "acc: ", clf.score(features_test, labels_test)
 
 try:

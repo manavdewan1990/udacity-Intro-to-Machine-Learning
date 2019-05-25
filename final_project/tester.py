@@ -12,7 +12,9 @@
 
 import pickle
 import sys
+
 from sklearn.cross_validation import StratifiedShuffleSplit
+
 sys.path.append("../tools/")
 from feature_format import featureFormat, targetFeatureSplit
 

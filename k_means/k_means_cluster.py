@@ -8,9 +8,10 @@
 
 
 import pickle
-import numpy
-import matplotlib.pyplot as plt
 import sys
+
+import matplotlib.pyplot as plt
+
 sys.path.append("../tools/")
 from feature_format import featureFormat, targetFeatureSplit
 

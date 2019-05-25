@@ -13,8 +13,9 @@
 """    
 
 
-import sys
 import pickle
+import sys
+
 sys.path.append("../tools/")
 from feature_format import featureFormat, targetFeatureSplit
 dictionary = pickle.load( open("../final_project/final_project_dataset_modified.pkl", "r") )

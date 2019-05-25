@@ -1,6 +1,5 @@
 #!/usr/bin/python
 
-from nltk.stem.snowball import SnowballStemmer
 import string
 
 def parseOutText(f):
